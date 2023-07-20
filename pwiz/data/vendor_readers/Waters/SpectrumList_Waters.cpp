@@ -210,12 +210,12 @@ PWIZ_API_DECL SpectrumPtr SpectrumList_Waters::spectrum(size_t index, DetailLeve
     }
 
     bool isProfile = rawdata_->Info.IsContinuum(ie.function);
-    if (isProfile)
+    bool doCentroid = msLevelsToCentroid.contains(msLevel) && isProfile;
+
+    if (isProfile && !doCentroid)
         result->set(MS_profile_spectrum); // let peakPicker know this was a profile spectrum even if centroiding is requested
     else
         result->set(MS_centroid_spectrum);
-
-    bool doCentroid = msLevelsToCentroid.contains(msLevel) && isProfile;
 
     if (doCentroid && ie.block >= 0)
     {
