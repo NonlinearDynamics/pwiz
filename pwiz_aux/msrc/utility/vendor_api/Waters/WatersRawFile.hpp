@@ -48,6 +48,7 @@
 #include "MassLynxLockMassProcessor.hpp"
 #include "MassLynxRawProcessor.hpp"
 #include "MassLynxParameters.hpp"
+#include "MassLynxScanProcessor.hpp"
 //#include "cdtdefs.h"
 //#include "compresseddatacluster.h"
 #pragma warning (pop)
@@ -428,10 +429,13 @@ struct PWIZ_API_DECL RawData
         }
     }
 
-    void EnableDDAProcessing()
+    void EnableProcessing(bool bEnableDDAProcessing)
     {
-        DDAProcessor.SetRawData(Reader);
-    }
+        if (bEnableDDAProcessing)
+            DDAProcessor.SetRawData(Reader);
+        else
+            ScanProcessor.SetRawData(Reader);
+    }   
 
     unsigned int GetDDAScanCount()
     {
@@ -497,9 +501,23 @@ struct PWIZ_API_DECL RawData
         return true;
     }
 
+    bool ReadScan(int function, int scan, bool doCentroiding, vector<float>& masses, vector<float>& intensities)
+    {
+        MassLynxParameters parameters;
+        ScanProcessor.Load(function, scan);
+
+        if (doCentroiding)
+        {
+            ScanProcessor.Centroid();
+        }
+
+        ScanProcessor.GetScan(masses, intensities);
+    }
+
     private:
     MassLynxLockMassProcessor LockMass;
     MassLynxDDAProcessor DDAProcessor;
+    MassLynxScanProcessor ScanProcessor;
     mutable MassLynxRawProcessorWithProgress PeakPicker;
     mutable boost::shared_ptr<RawData> centroidRaw_;
     mutable int workingDriftTimeFunctionIndex_;
