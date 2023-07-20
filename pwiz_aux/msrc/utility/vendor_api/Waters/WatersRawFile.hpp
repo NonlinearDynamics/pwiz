@@ -76,7 +76,7 @@ class MassLynxRawProcessorWithProgress : public MassLynxRawProcessor
     public:
     MassLynxRawProcessorWithProgress(const string& rawpath, IterationListenerRegistry* ilr = nullptr) : ilr_(ilr), numSpectra_(100), lastSpectrum_(0)
     {
-        SetRawPath(rawpath);
+        SetRawData(rawpath);
     }
 
     void SetNumSpectra(int numSpectra) { numSpectra_ = numSpectra; }
@@ -134,7 +134,7 @@ struct PWIZ_API_DECL RawData
           hasIonMobility_(false),
           hasSONAR_(false)
     {
-        LockMass.SetRawReader(Reader);
+        LockMass.SetRawData(Reader);
 
         // Count the number of _FUNC[0-9]{3}.DAT files, starting with _FUNC001.DAT
         // For functions over 100, the names become _FUNC0100.DAT
@@ -430,7 +430,7 @@ struct PWIZ_API_DECL RawData
 
     void EnableDDAProcessing()
     {
-        DDAProcessor.SetRawReader(Reader);
+        DDAProcessor.SetRawData(Reader);
     }
 
     unsigned int GetDDAScanCount()

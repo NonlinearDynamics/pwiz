@@ -109,7 +109,7 @@ PWIZ_API_DECL bool SpectrumList_Waters::isLockMassFunction(int function) const
 {
     if (lockmassFunction_ == LOCKMASS_FUNCTION_UNINIT)
     {
-        if (!rawdata_->Info.TryGetLockMassChannel(lockmassFunction_))
+        if (!rawdata_->Info.TryGetLockMassFunction(lockmassFunction_))
         {
             lockmassFunction_ = LOCKMASS_FUNCTION_UNKNOWN;
         }
