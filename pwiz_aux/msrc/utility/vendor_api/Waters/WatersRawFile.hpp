@@ -501,17 +501,25 @@ struct PWIZ_API_DECL RawData
         return true;
     }
 
-    bool ReadScan(int function, int scan, bool doCentroiding, vector<float>& masses, vector<float>& intensities)
+    bool ReadScan(int function, int scan, bool doCentroid, vector<float>& masses, vector<float>& intensities)
     {
-        MassLynxParameters parameters;
-        ScanProcessor.Load(function, scan);
-
-        if (doCentroiding)
+        try
         {
-            ScanProcessor.Centroid();
+            ScanProcessor.Load(function, scan);
+
+            if (doCentroid)
+            {
+                ScanProcessor.Centroid();
+            }
+
+            ScanProcessor.GetScan(masses, intensities);
+        }
+        catch (MassLynxRawException)
+        {
+            return false;
         }
 
-        ScanProcessor.GetScan(masses, intensities);
+        return true;
     }
 
     private:
