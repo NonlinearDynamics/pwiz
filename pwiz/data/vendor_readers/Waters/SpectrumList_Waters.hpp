@@ -107,6 +107,7 @@ class PWIZ_API_DECL SpectrumList_Waters : public SpectrumListIonMobilityBase
 
     void initializeCoefficients() const;
     double calibrate(const double &mz) const;
+    void measureAndUpdateScanStats(const vector<float>& masses, const vector<float>& intensities, const SpectrumPtr& result) const;
     mutable vector<double> calibrationCoefficients_;
     mutable vector<double> imsCalibratedMasses_;
     mutable vector<float> imsMasses_;

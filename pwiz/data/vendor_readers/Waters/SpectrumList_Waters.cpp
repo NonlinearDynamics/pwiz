@@ -231,7 +231,7 @@ PWIZ_API_DECL SpectrumPtr SpectrumList_Waters::spectrum(size_t index, DetailLeve
     // block >= 0 is ion mobility
     if (ie.block < 0 || config_.combineIonMobilitySpectra)
     {
-        //TODO this will now be wrong if centroiding, ddaProcessing or lockmass correction happens
+        //This will now be inaccurate if centroiding, ddaProcessing or lockmass correction happens. In this case update the values from the binary data after it is read
         int scan = ie.block < 0 ? ie.scan : ie.block;
         // scanStats values don't match the ion mobility data arrays
         // CONSIDER: in the ion mobility case, get these values from the actual data arrays
@@ -367,12 +367,10 @@ PWIZ_API_DECL SpectrumPtr SpectrumList_Waters::spectrum(size_t index, DetailLeve
             }
             else // not ion mobility
             {
-                if (detailLevel == DetailLevel_FullData)
-                {
-                    rawdata_->ReadScan(ie.function, ie.scan, doCentroid, masses, intensities);
-                    result->defaultArrayLength = masses.size();
-                }
+               rawdata_->ReadScan(ie.function, ie.scan, doCentroid, masses, intensities);
             }
+
+            measureAndUpdateScanStats(masses, intensities, result);
 
             if (detailLevel == DetailLevel_FullData)
             {
@@ -391,6 +389,29 @@ PWIZ_API_DECL SpectrumPtr SpectrumList_Waters::spectrum(size_t index, DetailLeve
     }
 
     return result;
+}
+
+PWIZ_API_DECL void SpectrumList_Waters::measureAndUpdateScanStats(const vector<float> &masses, const vector<float>& intensities, const SpectrumPtr& result) const
+{
+    double basePeakIntensity = 0.0;
+    double tic = 0.0;
+    int basePeakIndex = 0;
+    int currentIndex = 0;
+
+    for (auto it = intensities.cbegin(); it != intensities.cend(); ++it, currentIndex++)
+    {
+        tic += *it;
+        if (*it > basePeakIntensity)
+        {
+            basePeakIntensity = *it;
+            basePeakIndex = currentIndex;
+        }
+    }
+
+    result->set(MS_base_peak_m_z, masses[basePeakIndex]);
+    result->set(MS_base_peak_intensity, basePeakIntensity);
+    result->set(MS_total_ion_current, tic);
+    result->defaultArrayLength = masses.size();
 }
 
 
