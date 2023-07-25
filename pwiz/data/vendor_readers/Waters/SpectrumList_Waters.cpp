@@ -752,10 +752,7 @@ PWIZ_API_DECL void SpectrumList_Waters::getDDAScan(unsigned int index, bool doCe
 {
     using namespace boost::spirit::karma;
     
-    float setMass, precursorMass, retentionTime;
-    int function, startScan, endScan;
-    bool isMS1;
-    rawdata_->GetDDAScan(index, retentionTime, function, startScan, endScan, isMS1, setMass, precursorMass, doCentroid, masses, intensities);
+    rawdata_->GetDDAScan(index, doCentroid, masses, intensities);
 }
 
 PWIZ_API_DECL void SpectrumList_Waters::createDDAIndex()

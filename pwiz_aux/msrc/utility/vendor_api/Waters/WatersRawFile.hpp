@@ -441,7 +441,7 @@ struct PWIZ_API_DECL RawData
         return DDAProcessor.GetScanCount();
     }
 
-    bool GetDDAScan(const int& nWhichIndex, float& RT, int& function, int& startScan, int& endScan, bool& isMS1, float& setMass, float& precursorMass, bool doCentroid, vector<float>& masses, vector<float>& intensities)
+    bool GetDDAScan(const int& nWhichIndex, bool doCentroid, vector<float>& masses, vector<float>& intensities)
     {
         MassLynxParameters parameters;
         bool success = DDAProcessor.GetScan(nWhichIndex, masses, intensities, parameters);
@@ -453,19 +453,7 @@ struct PWIZ_API_DECL RawData
         {
             ScanProcessor.SetScan(masses, intensities).Centroid().GetScan(masses, intensities);
         }
-        
-        RT = lexical_cast<float>(parameters.Get(MassLynxDDAIndexDetail::RT));
-        function = lexical_cast<int>(parameters.Get(MassLynxDDAIndexDetail::FUNCTION));
-        startScan = lexical_cast<int>(parameters.Get(MassLynxDDAIndexDetail::START_SCAN));
-        endScan = lexical_cast<int>(parameters.Get(MassLynxDDAIndexDetail::END_SCAN));
-        isMS1 = lexical_cast<int>(parameters.Get(MassLynxDDAIndexDetail::SCAN_TYPE)) == (int)MassLynxScanType::MS1;
-
-        if (!isMS1)
-        {
-            setMass = lexical_cast<float>(parameters.Get(MassLynxDDAIndexDetail::SET_MASS));
-            precursorMass = lexical_cast<float>(parameters.Get(MassLynxDDAIndexDetail::PRECURSOR_MASS));
-        }
-        
+               
         return success;
     }
 
