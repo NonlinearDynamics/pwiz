@@ -356,7 +356,7 @@ PWIZ_API_DECL SpectrumPtr SpectrumList_Waters::spectrum(size_t index, DetailLeve
             {
                 getDDAScan(index, doCentroid, masses, intensities);
             }
-            else if (ie.block >= 0 && !doCentroid && !isLockMassFunction(ie.function)) // Lockmass won't have IMS
+            else if (ie.block >= 0 && !doCentroid)
             {
                 MassLynxRawScanReader& scanReader = rawdata_->GetCompressedDataClusterForBlock(ie.function, ie.block);
                 scanReader.ReadScan(ie.function, ie.block, ie.scan, masses, intensities);
