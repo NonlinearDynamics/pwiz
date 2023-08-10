@@ -442,10 +442,13 @@ struct PWIZ_API_DECL RawData
         return DDAProcessor.GetScanCount();
     }
 
-    bool GetDDAScan(const int& nWhichIndex, float& RT, int& function, int& startScan, int& endScan, bool& isMS1, float& setMass, float& precursorMass, vector<float>& masses, vector<float>& intensities)
+    bool GetDDAScan(const int& nWhichIndex, bool doCentroid, float& RT, int& function, int& startScan, int& endScan, bool& isMS1, float& setMass, float& precursorMass, vector<float>& masses, vector<float>& intensities)
     {
         MassLynxParameters parameters;
-        bool success = DDAProcessor.GetScan(nWhichIndex, masses, intensities, parameters);
+
+        MassLynxParameters processingParameters;
+        processingParameters.Set(DDAProcessingParameter::CENTROID, doCentroid);
+        bool success = DDAProcessor.SetProcessingParameters(processingParameters).GetScan(nWhichIndex, masses, intensities, parameters);
 
         if (success)
         {
