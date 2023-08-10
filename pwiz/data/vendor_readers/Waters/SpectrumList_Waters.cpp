@@ -354,9 +354,9 @@ PWIZ_API_DECL SpectrumPtr SpectrumList_Waters::spectrum(size_t index, DetailLeve
 
             if (useDDAProcessor_)
             {
-                getDDAScan(index, doCentroid, masses, intensities);
+                getDDAScan(index, masses, intensities);
             }
-            else if (ie.block >= 0 && !doCentroid)
+            else if (ie.block >= 0 && !doCentroid && !isLockMassFunction(ie.function)) // Lockmass won't have IMS
             {
                 MassLynxRawScanReader& scanReader = rawdata_->GetCompressedDataClusterForBlock(ie.function, ie.block);
                 scanReader.ReadScan(ie.function, ie.block, ie.scan, masses, intensities);
@@ -391,11 +391,11 @@ PWIZ_API_DECL SpectrumPtr SpectrumList_Waters::spectrum(size_t index, DetailLeve
     return result;
 }
 
-PWIZ_API_DECL void SpectrumList_Waters::measureAndUpdateScanStats(const vector<float>& masses, const vector<float>& intensities, const SpectrumPtr& result) const
+PWIZ_API_DECL void SpectrumList_Waters::measureAndUpdateScanStats(const vector<float> &masses, const vector<float>& intensities, const SpectrumPtr& result) const
 {
     double basePeakIntensity = 0.0;
     double tic = 0.0;
-    int basePeakIndex = -1;
+    int basePeakIndex = 0;
     int currentIndex = 0;
 
     for (auto it = intensities.cbegin(); it != intensities.cend(); ++it, currentIndex++)
@@ -408,11 +408,12 @@ PWIZ_API_DECL void SpectrumList_Waters::measureAndUpdateScanStats(const vector<f
         }
     }
 
-    result->set(MS_base_peak_m_z, basePeakIndex >= 0 ? masses[basePeakIndex] : 0);
+    result->set(MS_base_peak_m_z, masses[basePeakIndex]);
     result->set(MS_base_peak_intensity, basePeakIntensity);
     result->set(MS_total_ion_current, tic);
     result->defaultArrayLength = masses.size();
 }
+
 
 PWIZ_API_DECL bool SpectrumList_Waters::hasSonarFunctions() const
 {
@@ -747,11 +748,14 @@ PWIZ_API_DECL void SpectrumList_Waters::createIndex()
     size_ = index_.size();
 }
 
-PWIZ_API_DECL void SpectrumList_Waters::getDDAScan(unsigned int index, bool doCentroid, vector<float>& masses, vector<float>& intensities) const
+PWIZ_API_DECL void SpectrumList_Waters::getDDAScan(unsigned int index, vector<float>& masses, vector<float>& intensities) const
 {
     using namespace boost::spirit::karma;
     
-    rawdata_->GetDDAScan(index, doCentroid, masses, intensities);
+    float setMass, precursorMass, retentionTime;
+    int function, startScan, endScan;
+    bool isMS1;
+    rawdata_->GetDDAScan(index, retentionTime, function, startScan, endScan, isMS1, setMass, precursorMass, masses, intensities);
 }
 
 PWIZ_API_DECL void SpectrumList_Waters::createDDAIndex()
