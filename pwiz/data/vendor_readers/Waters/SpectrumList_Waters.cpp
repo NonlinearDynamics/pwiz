@@ -395,7 +395,7 @@ PWIZ_API_DECL void SpectrumList_Waters::measureAndUpdateScanStats(const vector<f
 {
     double basePeakIntensity = 0.0;
     double tic = 0.0;
-    int basePeakIndex = 0;
+    int basePeakIndex = -1;
     int currentIndex = 0;
 
     for (auto it = intensities.cbegin(); it != intensities.cend(); ++it, currentIndex++)
@@ -408,12 +408,11 @@ PWIZ_API_DECL void SpectrumList_Waters::measureAndUpdateScanStats(const vector<f
         }
     }
 
-    result->set(MS_base_peak_m_z, masses[basePeakIndex]);
+    result->set(MS_base_peak_m_z, basePeakIndex >= 0 ? masses[basePeakIndex] : 0);
     result->set(MS_base_peak_intensity, basePeakIntensity);
     result->set(MS_total_ion_current, tic);
     result->defaultArrayLength = masses.size();
 }
-
 
 PWIZ_API_DECL bool SpectrumList_Waters::hasSonarFunctions() const
 {
