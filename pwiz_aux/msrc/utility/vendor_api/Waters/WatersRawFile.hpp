@@ -446,9 +446,7 @@ struct PWIZ_API_DECL RawData
     {
         MassLynxParameters parameters;
 
-        MassLynxParameters processingParameters;
-        processingParameters.Set(DDAProcessingParameter::CENTROID, doCentroid);
-        bool success = DDAProcessor.SetProcessingParameters(processingParameters).GetScan(nWhichIndex, masses, intensities, parameters);
+        bool success = DDAProcessor.SetCentroid(doCentroid).GetScan(nWhichIndex, masses, intensities, parameters);
 
         if (success)
         {
@@ -491,9 +489,9 @@ struct PWIZ_API_DECL RawData
 
     bool GetIsolationWindow(float& lowerOffset, float& upperOffset)
     {
-        MassLynxParameters parameters = DDAProcessor.GetParameters();
-        float lowerOffsetParam = lexical_cast<float>(parameters.Get(DDAParameter::LOWEROFFSET));
-        float upperOffsetParam = lexical_cast<float>(parameters.Get(DDAParameter::UPPEROFFSET));
+        MassLynxParameters parameters = DDAProcessor.GetQuadIsolationWindowParameters();
+        float lowerOffsetParam = lexical_cast<float>(parameters.Get(DDAIsolationWindowParameter::LOWEROFFSET));
+        float upperOffsetParam = lexical_cast<float>(parameters.Get(DDAIsolationWindowParameter::UPPEROFFSET));
 
         if (lowerOffsetParam == 0 && upperOffsetParam == 0)
             return false;
@@ -527,7 +525,7 @@ struct PWIZ_API_DECL RawData
 
     private:
     MassLynxLockMassProcessor LockMass;
-    MassLynxDDAProcessor DDAProcessor;
+    Extended::MassLynxDDAProcessor DDAProcessor;
     MassLynxScanProcessor ScanProcessor;
     mutable MassLynxRawProcessorWithProgress PeakPicker;
     mutable boost::shared_ptr<RawData> centroidRaw_;
