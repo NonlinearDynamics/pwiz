@@ -10,57 +10,57 @@
       <cvParam cvRef="MS" accession="MS:1000580" name="MSn spectrum" value=""/>
     </fileContent>
     <sourceFileList count="13">
-      <sourceFile id="_FUNC001.DAT" name="_FUNC001.DAT" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
+      <sourceFile id="_FUNC001.DAT" name="_FUNC001.DAT" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
         <cvParam cvRef="MS" accession="MS:1000769" name="Waters nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000526" name="Waters raw format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="81557546c20ddb22377f3c2ba035a9c830f8c527"/>
       </sourceFile>
-      <sourceFile id="_FUNC002.DAT" name="_FUNC002.DAT" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
+      <sourceFile id="_FUNC002.DAT" name="_FUNC002.DAT" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
         <cvParam cvRef="MS" accession="MS:1000769" name="Waters nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000526" name="Waters raw format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="2d59887fef0aad5babeac63028186a8c75c517d5"/>
       </sourceFile>
-      <sourceFile id="_extern.inf" name="_extern.inf" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
+      <sourceFile id="_extern.inf" name="_extern.inf" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="f9e3ba6671f35c2e7bc8cfef87509e59dbd02a87"/>
       </sourceFile>
-      <sourceFile id="_func001.cdt" name="_func001.cdt" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
+      <sourceFile id="_func001.cdt" name="_func001.cdt" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="c16c211b474b71fe56e054d2ca1b5199a9a01738"/>
       </sourceFile>
-      <sourceFile id="_FUNC001.IDX" name="_FUNC001.IDX" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
+      <sourceFile id="_FUNC001.IDX" name="_FUNC001.IDX" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="3c898d0b41682b3886e4046e107e4246f59ce396"/>
       </sourceFile>
-      <sourceFile id="_func001.ind" name="_func001.ind" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
+      <sourceFile id="_func001.ind" name="_func001.ind" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="546179c57669600ff9bda08a4425458bde2e783f"/>
       </sourceFile>
-      <sourceFile id="_FUNC001.STS" name="_FUNC001.STS" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
+      <sourceFile id="_FUNC001.STS" name="_FUNC001.STS" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="53191e50a314aadbac933f2550b14412fd45f435"/>
       </sourceFile>
-      <sourceFile id="_func002.cdt" name="_func002.cdt" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
+      <sourceFile id="_func002.cdt" name="_func002.cdt" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="4576b16a0eef0d765590ae7028468aa94768eed5"/>
       </sourceFile>
-      <sourceFile id="_FUNC002.IDX" name="_FUNC002.IDX" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
+      <sourceFile id="_FUNC002.IDX" name="_FUNC002.IDX" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="b6f90a9a0c87ce0133deec0fc53f342cf89d06f1"/>
       </sourceFile>
-      <sourceFile id="_func002.ind" name="_func002.ind" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
+      <sourceFile id="_func002.ind" name="_func002.ind" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="328cf0677be2fbe0f10731ccd3680f866c2245f7"/>
       </sourceFile>
-      <sourceFile id="_FUNC002.STS" name="_FUNC002.STS" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
+      <sourceFile id="_FUNC002.STS" name="_FUNC002.STS" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="5de1f720361bf107336414a1d4b05d3269b80eb5"/>
       </sourceFile>
-      <sourceFile id="_FUNCTNS.INF" name="_FUNCTNS.INF" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
+      <sourceFile id="_FUNCTNS.INF" name="_FUNCTNS.INF" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="2c7458fad05fd0ae5a3b2bff4d3f7c6c5352d02e"/>
       </sourceFile>
-      <sourceFile id="_HEADER.TXT" name="_HEADER.TXT" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
+      <sourceFile id="_HEADER.TXT" name="_HEADER.TXT" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\HDDDA_Short_noLM.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="3c93dadd0b141a50b431384b3532cb4e44c98d16"/>
       </sourceFile>
@@ -70,7 +70,7 @@
     <software id="MassLynx" version="4.1">
       <cvParam cvRef="MS" accession="MS:1000534" name="MassLynx" value=""/>
     </software>
-    <software id="pwiz_Reader_Waters" version="3.0.23341">
+    <software id="pwiz_Reader_Waters" version="3.0.24004">
       <cvParam cvRef="MS" accession="MS:1000615" name="ProteoWizard software" value=""/>
     </software>
   </softwareList>
@@ -88,7 +88,7 @@
   </dataProcessingList>
   <run id="HDDDA_Short_noLM" defaultInstrumentConfigurationRef="IC" startTimeStamp="2018-05-16T14:33:18Z" defaultSourceFileRef="_FUNC001.DAT">
     <spectrumList count="1" defaultDataProcessingRef="pwiz_Reader_Waters_conversion">
-      <spectrum index="0" id="function=1 process=0 scan=1" defaultArrayLength="0">
+      <spectrum index="0" id="function=1 process=0 spectrum=1 scan=1" defaultArrayLength="0">
         <cvParam cvRef="MS" accession="MS:1000579" name="MS1 spectrum" value=""/>
         <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="1"/>
         <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
