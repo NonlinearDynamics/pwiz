@@ -10,78 +10,78 @@
       <cvParam cvRef="MS" accession="MS:1000804" name="electromagnetic radiation spectrum" value=""/>
     </fileContent>
     <sourceFileList count="18">
-      <sourceFile id="_FUNC001.DAT" name="_FUNC001.DAT" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
+      <sourceFile id="_FUNC001.DAT" name="_FUNC001.DAT" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
         <cvParam cvRef="MS" accession="MS:1000769" name="Waters nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000526" name="Waters raw format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="5a9b6e098d45a15a7753e49c8ebf21a7f7518837"/>
       </sourceFile>
-      <sourceFile id="_FUNC002.DAT" name="_FUNC002.DAT" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
+      <sourceFile id="_FUNC002.DAT" name="_FUNC002.DAT" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
         <cvParam cvRef="MS" accession="MS:1000769" name="Waters nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000526" name="Waters raw format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="a6b86523129c943a0aa4a03f148d586f2f9b74f2"/>
       </sourceFile>
-      <sourceFile id="_FUNC003.DAT" name="_FUNC003.DAT" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
+      <sourceFile id="_FUNC003.DAT" name="_FUNC003.DAT" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
         <cvParam cvRef="MS" accession="MS:1000769" name="Waters nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000526" name="Waters raw format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="06b513612f65e4f4a4ee5b0e501c187d83d4d9f4"/>
       </sourceFile>
-      <sourceFile id="_CHRO001.DAT" name="_CHRO001.DAT" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
+      <sourceFile id="_CHRO001.DAT" name="_CHRO001.DAT" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="b9732144b75cce2dd778a36448fdc834b75d580f"/>
       </sourceFile>
-      <sourceFile id="_CHRO002.DAT" name="_CHRO002.DAT" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
+      <sourceFile id="_CHRO002.DAT" name="_CHRO002.DAT" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="d37370abfafe11189a887644cddf3f69a0bed04b"/>
       </sourceFile>
-      <sourceFile id="_CHRO003.DAT" name="_CHRO003.DAT" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
+      <sourceFile id="_CHRO003.DAT" name="_CHRO003.DAT" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="413d07fcea8a23557b9f66789fe151283d4e83c1"/>
       </sourceFile>
-      <sourceFile id="_CHRO004.DAT" name="_CHRO004.DAT" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
+      <sourceFile id="_CHRO004.DAT" name="_CHRO004.DAT" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="92d79f95a3bdf35f28091ead098ab0595c084066"/>
       </sourceFile>
-      <sourceFile id="_CHROMS.INF" name="_CHROMS.INF" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
+      <sourceFile id="_CHROMS.INF" name="_CHROMS.INF" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="7df53e62b3e36d508cce879f4bba25f98d92a69b"/>
       </sourceFile>
-      <sourceFile id="_extern.inf" name="_extern.inf" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
+      <sourceFile id="_extern.inf" name="_extern.inf" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="a82b7c6d24845dd01a5ce18c581b93be65c5d1d8"/>
       </sourceFile>
-      <sourceFile id="_FUNC001.IDX" name="_FUNC001.IDX" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
+      <sourceFile id="_FUNC001.IDX" name="_FUNC001.IDX" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="00dc7933d66b784720a96bd6f9f60b413cb57460"/>
       </sourceFile>
-      <sourceFile id="_FUNC001.STS" name="_FUNC001.STS" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
+      <sourceFile id="_FUNC001.STS" name="_FUNC001.STS" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="2f118219c886d2f8f502dc8080b05a3915343250"/>
       </sourceFile>
-      <sourceFile id="_FUNC002.IDX" name="_FUNC002.IDX" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
+      <sourceFile id="_FUNC002.IDX" name="_FUNC002.IDX" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="0db4a4010c4ed3c9c7ead0f4f9630fdd41e7f924"/>
       </sourceFile>
-      <sourceFile id="_FUNC002.STS" name="_FUNC002.STS" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
+      <sourceFile id="_FUNC002.STS" name="_FUNC002.STS" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="c2860e61869c9b74548186262c9960eeb8ee42ba"/>
       </sourceFile>
-      <sourceFile id="_FUNC003.IDX" name="_FUNC003.IDX" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
+      <sourceFile id="_FUNC003.IDX" name="_FUNC003.IDX" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="3c30a66f87b5d4677eb7dd288485168eec8d5daa"/>
       </sourceFile>
-      <sourceFile id="_FUNCTNS.INF" name="_FUNCTNS.INF" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
+      <sourceFile id="_FUNCTNS.INF" name="_FUNCTNS.INF" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="148bacdcc956a353b38160fb819aa2699d3beef9"/>
       </sourceFile>
-      <sourceFile id="_HEADER.TXT" name="_HEADER.TXT" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
+      <sourceFile id="_HEADER.TXT" name="_HEADER.TXT" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="e32446c4f141fe7fe3624052fe862b5ed3f9eb95"/>
       </sourceFile>
-      <sourceFile id="_HISTORY.INF" name="_HISTORY.INF" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
+      <sourceFile id="_HISTORY.INF" name="_HISTORY.INF" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="ca080221cd27bf21e43d1473e694ff61ad377b48"/>
       </sourceFile>
-      <sourceFile id="_INLET.INF" name="_INLET.INF" location="file://C:\dev\pwiz\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
+      <sourceFile id="_INLET.INF" name="_INLET.INF" location="file://C:\Users\ukimor\Development\pwiz-nld-working\pwiz\data\vendor_readers\Waters\Reader_Waters_Test.data\QC_LCMS2-2_23_268-1-1.raw">
         <cvParam cvRef="MS" accession="MS:1000824" name="no nativeID format" value=""/>
         <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="5c6b38a4060bf77427c0338640abd54ad411c749"/>
       </sourceFile>
@@ -91,7 +91,7 @@
     <software id="MassLynx" version="4.1">
       <cvParam cvRef="MS" accession="MS:1000534" name="MassLynx" value=""/>
     </software>
-    <software id="pwiz_Reader_Waters" version="3.0.23341">
+    <software id="pwiz_Reader_Waters" version="3.0.24004">
       <cvParam cvRef="MS" accession="MS:1000615" name="ProteoWizard software" value=""/>
     </software>
   </softwareList>
@@ -109,7 +109,7 @@
   </dataProcessingList>
   <run id="QC_LCMS2-2_23_268-1-1" defaultInstrumentConfigurationRef="IC" startTimeStamp="2023-09-10T05:00:15Z" defaultSourceFileRef="_FUNC001.DAT">
     <spectrumList count="10" defaultDataProcessingRef="pwiz_Reader_Waters_conversion">
-      <spectrum index="0" id="function=3 process=0 scan=1" defaultArrayLength="191">
+      <spectrum index="0" id="function=3 process=0 spectrum=1 scan=1" defaultArrayLength="191">
         <cvParam cvRef="MS" accession="MS:1000804" name="electromagnetic radiation spectrum" value=""/>
         <cvParam cvRef="MS" accession="MS:1000128" name="profile spectrum" value=""/>
         <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="0.0"/>
@@ -137,7 +137,7 @@
           </binaryDataArray>
         </binaryDataArrayList>
       </spectrum>
-      <spectrum index="1" id="function=3 process=0 scan=2" defaultArrayLength="191">
+      <spectrum index="1" id="function=3 process=0 spectrum=2 scan=2" defaultArrayLength="191">
         <cvParam cvRef="MS" accession="MS:1000804" name="electromagnetic radiation spectrum" value=""/>
         <cvParam cvRef="MS" accession="MS:1000128" name="profile spectrum" value=""/>
         <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="391.953003"/>
@@ -165,7 +165,7 @@
           </binaryDataArray>
         </binaryDataArrayList>
       </spectrum>
-      <spectrum index="2" id="function=3 process=0 scan=3" defaultArrayLength="191">
+      <spectrum index="2" id="function=3 process=0 spectrum=3 scan=3" defaultArrayLength="191">
         <cvParam cvRef="MS" accession="MS:1000804" name="electromagnetic radiation spectrum" value=""/>
         <cvParam cvRef="MS" accession="MS:1000128" name="profile spectrum" value=""/>
         <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="391.953003"/>
@@ -193,7 +193,7 @@
           </binaryDataArray>
         </binaryDataArrayList>
       </spectrum>
-      <spectrum index="3" id="function=3 process=0 scan=4" defaultArrayLength="191">
+      <spectrum index="3" id="function=3 process=0 spectrum=4 scan=4" defaultArrayLength="191">
         <cvParam cvRef="MS" accession="MS:1000804" name="electromagnetic radiation spectrum" value=""/>
         <cvParam cvRef="MS" accession="MS:1000128" name="profile spectrum" value=""/>
         <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="223.953003"/>
@@ -221,7 +221,7 @@
           </binaryDataArray>
         </binaryDataArrayList>
       </spectrum>
-      <spectrum index="4" id="function=1 process=0 scan=1" defaultArrayLength="2">
+      <spectrum index="4" id="function=1 process=0 spectrum=1 scan=5" defaultArrayLength="2">
         <cvParam cvRef="MS" accession="MS:1000579" name="MS1 spectrum" value=""/>
         <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="1"/>
         <cvParam cvRef="MS" accession="MS:1000129" name="negative scan" value=""/>
@@ -257,7 +257,7 @@
           </binaryDataArray>
         </binaryDataArrayList>
       </spectrum>
-      <spectrum index="5" id="function=3 process=0 scan=5" defaultArrayLength="191">
+      <spectrum index="5" id="function=3 process=0 spectrum=5 scan=6" defaultArrayLength="191">
         <cvParam cvRef="MS" accession="MS:1000804" name="electromagnetic radiation spectrum" value=""/>
         <cvParam cvRef="MS" accession="MS:1000128" name="profile spectrum" value=""/>
         <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="213.953003"/>
@@ -285,7 +285,7 @@
           </binaryDataArray>
         </binaryDataArrayList>
       </spectrum>
-      <spectrum index="6" id="function=3 process=0 scan=6" defaultArrayLength="191">
+      <spectrum index="6" id="function=3 process=0 spectrum=6 scan=7" defaultArrayLength="191">
         <cvParam cvRef="MS" accession="MS:1000804" name="electromagnetic radiation spectrum" value=""/>
         <cvParam cvRef="MS" accession="MS:1000128" name="profile spectrum" value=""/>
         <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="213.953003"/>
@@ -313,7 +313,7 @@
           </binaryDataArray>
         </binaryDataArrayList>
       </spectrum>
-      <spectrum index="7" id="function=3 process=0 scan=7" defaultArrayLength="191">
+      <spectrum index="7" id="function=3 process=0 spectrum=7 scan=8" defaultArrayLength="191">
         <cvParam cvRef="MS" accession="MS:1000804" name="electromagnetic radiation spectrum" value=""/>
         <cvParam cvRef="MS" accession="MS:1000128" name="profile spectrum" value=""/>
         <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="213.953003"/>
@@ -341,7 +341,7 @@
           </binaryDataArray>
         </binaryDataArrayList>
       </spectrum>
-      <spectrum index="8" id="function=2 process=0 scan=1" defaultArrayLength="47">
+      <spectrum index="8" id="function=2 process=0 spectrum=1 scan=9" defaultArrayLength="47">
         <cvParam cvRef="MS" accession="MS:1000580" name="MSn spectrum" value=""/>
         <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="2"/>
         <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
@@ -395,7 +395,7 @@
           </binaryDataArray>
         </binaryDataArrayList>
       </spectrum>
-      <spectrum index="9" id="function=3 process=0 scan=8" defaultArrayLength="191">
+      <spectrum index="9" id="function=3 process=0 spectrum=8 scan=10" defaultArrayLength="191">
         <cvParam cvRef="MS" accession="MS:1000804" name="electromagnetic radiation spectrum" value=""/>
         <cvParam cvRef="MS" accession="MS:1000128" name="profile spectrum" value=""/>
         <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="213.953003"/>
