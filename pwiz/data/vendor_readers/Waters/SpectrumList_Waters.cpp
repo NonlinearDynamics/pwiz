@@ -714,8 +714,8 @@ PWIZ_API_DECL void SpectrumList_Waters::createIndex()
 
                     std::back_insert_iterator<std::string> sink(ie.id);
                     generate(sink,
-                        "function=" << int_ << " process=" << int_ << " scan=" << int_,
-                        (ie.function + 1), ie.process, ((numScansInBlock*ie.block) + ie.scan + 1));
+                        "function=" << int_ << " process=" << int_ << " spectrum=" << int_ << " scan=" << int_,
+                        (ie.function + 1), ie.process, ((numScansInBlock*ie.block) + ie.scan + 1), ie.index + 1);
                     idToIndexMap_[ie.id] = ie.index;
                 }
             }
@@ -732,8 +732,8 @@ PWIZ_API_DECL void SpectrumList_Waters::createIndex()
 
             std::back_insert_iterator<std::string> sink(ie.id);
             generate(sink,
-                     "function=" << int_ << " process=" << int_ << " scan=" << int_,
-                     (ie.function + 1), ie.process, (ie.scan + 1));
+                     "function=" << int_ << " process=" << int_ << " spectrum=" << int_ << " scan=" << int_,
+                     ie.function + 1, ie.process, ie.scan + 1, ie.index+1);
             idToIndexMap_[ie.id] = ie.index;
         }
         rt = 0; // suppress warning
@@ -773,14 +773,14 @@ PWIZ_API_DECL void SpectrumList_Waters::createDDAIndex()
         if (startScan == endScan)
         {
             generate(sink,
-                    "function=" << int_ << " process=" << int_ << " scan=" << int_,
-                    ie.function + 1, ie.process, ie.scan + 1);
+                    "function=" << int_ << " process=" << int_ << " spectrum=" << int_ << " scan=" << int_,
+                    ie.function + 1, ie.process, ie.scan + 1, ie.index + 1);
         } 
         else
         {
             generate(sink,
-                    "merged=" << int_ << " function=" << int_ << " process=" << int_ << " scans=" << int_ << "-" << int_,
-                    ie.index, ie.function + 1, ie.process, startScan + 1, endScan + 1);
+                    "merged=" << int_ << " function=" << int_ << " process=" << int_ << " spectra=" << int_ << "-" << int_ << " scan=" << int_,
+                    ie.index, ie.function + 1, ie.process, startScan + 1, endScan + 1, ie.index + 1);
         }
         idToIndexMap_[ie.id] = ie.index;
     }
